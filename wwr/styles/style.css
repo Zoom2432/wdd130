@@ -226,6 +226,37 @@ h2 {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* Rivers page */
+
+#rivers-hero-msg h1, #rivers-hero-msg h4 {
+    text-align: center;
+    color: #F1FAEE;
+}
+
+#rivers-hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 250px;
+}
+
+.rivers-info {
+    margin-top: 50px;
+}
+
+.river-item {
+    display: flex;
+    text-align: left;
+    grid-gap:50px;
+}
+
+.river-item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
 
 
 
