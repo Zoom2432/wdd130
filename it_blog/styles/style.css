@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+.container {
+    margin: 0 auto;
+    width: 1150px;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------- Header ------------------- */
+header {
+    height: 115px;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a img {
+    width: 100px;
+}
+
+.logo span {
+    font-size: 22pt;
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 203px;
+    font-size: 16pt;
+}
+
+header nav a:not(:last-child) {
+    border-right: solid 3px rgb(197, 192, 192);
+}
+
+
+header .socials a img {
+    width: 35px;
+    vertical-align: middle;
+}
+
+header .socials a:not(:last-child) {
+    padding-right: 20px;
+}
+
+
+/* ------------------- Hero ------------------- */
+.hero {
+    height: 480px;
+    text-align: center;
+    background-image: url(../images/hero.jpg);
+}
+
+.hero h1 {
+    font-size: 14pt;
+    font-weight: normal;
+    padding-top: 95px;
+    margin: 0;
+}
+
+.hero h2 {
+    padding-top: 5px;
+    font-size: 25pt;
+}
+
+.hero p {
+    font-size: 13pt;
+}
+
+.hero button {
+    margin-top: 15px;
+    font-size: 15px;
+    height: 35px;
+    width: 120px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/* ------------------- Posts ------------------- */
+.posts {
+    padding-bottom: 40px;
+}
+
+.flex {
+    display: flex;
+    gap: 55px;
+}
+
+.heading {
+    margin-top: 60px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 25pt;
+}
+
+.heading-text {
+    text-align: center;
+    font-size: 13pt;
+}
+
+.main-posts {
+    width: 700px;
+    text-align: center;
+}
+
+.main-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    height: 385px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(../images/nn.jpg);
+}
+
+.main-post h3 {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.second-post {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.second-post a img {
+    border-radius: 10px;
+    width: 335px;
+}
+
+.second-post .post-text {
+    text-align: left;
+}
+
+.second-post .post-text h3 {
+    margin-top: 20px;
+    font-size: 17pt;
+    text-align: left;
+}
+
+.third-post {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.third-post a img {
+    border-radius: 10px;
+    width: 335px;
+}
+
+.third-post .post-text {
+    text-align: left;
+}
+
+.third-post .post-text h3 {
+    margin-top: 20px;
+    font-size: 17pt;
+    text-align: left;
+}
+
+.main-posts button {
+    margin-top: 30px;
+    font-size: 15px;
+    height: 35px;
+    width: 200px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+aside {
+    margin-top: 40px;
+    width: 335px;
+    height: 800px;
+    padding: 25px;
+    background-color: #f1eeee;
+    border-radius: 10px;
+}
+
+.aside-posts h3 {
+    font-size: 17pt;
+    margin: 0 0 25px 0;
+}
+
+.aside-post {
+    display: flex;
+    gap: 15px;
+}
+
+.aside-post {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.aside-post a img {
+    border-radius: 5px;
+    width: 125px;
+}
+
+.aside-post .post-text p:not(:last-child) {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 10pt;
+    text-align: left;
+    font-weight: bold;
+}
+
+.aside-post .post-text p:not(:first-child) {
+    font-size: 10pt;
+}
+
+.adv {
+    padding: 18px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.adv a img {
+    border-radius: 7px;
+    width: 300px;
+}
+
+
+/* ------------------- Subscribe ------------------- */
+.sub-content {
+    background-color: #f1eeee;
+    margin: 30px 0;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.sub-content h3 {
+    margin: 0;
+    font-size: 25pt;
+}
+
+.sub-content p {
+    font-size: 15pt;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+form input {
+    padding: 5px 10px;
+    height: 25px;
+    width: 300px;
+    border: solid 2px #afacac;
+    border-radius: 20px;
+}
+
+form button {
+    margin-left: 10px;
+    font-size: 15px;
+    height: 35px;
+    width: 115px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+/* ------------------- Footer ------------------- */
+footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info a img {
+    width: 60px;
+}
+
+.info a span {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.info .logo {
+    margin-bottom: 10px;
+}
+
+.names {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.tags a {
+    display: inline-block;
+    padding: 5px;
+    background-color: #f1eeee;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+
+.soc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.soc a {
+    font-size: 15pt;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cont a {
+    font-size: 15pt;
+}

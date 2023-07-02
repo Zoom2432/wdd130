@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT-Blog</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normolize.css">
 </head>
 <body>
-    <div id="content">
-        <header>
-            <a href="./index.html">
-                <img src="./images/logo.jpg" alt="Logo">
-            </a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+                <a href="./index.html"><span>IT-Blog</span></a>
+            </div>
 
             <nav>
                 <a href="./index.html">Home</a>
@@ -20,123 +22,179 @@
                 <a href="./about-us.html">About us</a>
             </nav>
 
-            <div class="cosials">
+            <div class="socials">
                 <a href="#"><img src="./images/twitt.png" alt="Twitter"></a>
                 <a href="#"><img src="./images/inst.png" alt="Instagram"></a>
                 <a href="#"><img src="./images/face.png" alt="Facebook"></a>
             </div>
-        </header>
-        
-        <div id="hero">
+        </div>
+    </header>
+    
+    <div class="hero">
+        <div class="container">
             <h1>IT-BLOG</h1>
-            <h2>10 reasons why you should choose the IT field.</h2>
-            <p>Nunc mi tortor, venenatis fermentum ipsum id, gravida lacinia magna. Suspendisse maximus neque at elit consequat aliquet...</p>
+            <h2>10 reasons why you should<br>choose the IT field.</h2>
+            <p>Nunc mi tortor, venenatis fermentum ipsum id, gravida lacinia magna.<br>Suspendisse maximus neque at elit consequat aliquet...</p>
             <button>READ MORE</button>
         </div>
-    
-        <main class="home-grid">
-            <section class="posts">
-                <div class="main-post">
-                    <h3>NEURAL NETWORKS</h3>
-                    <h2>How dangerous is the development of neural networks</h2>
-                    <p>Anna Maria Lopez  •  Mar 15, 2022  •  10 min read</p>
-                </div>
+    </div>
 
-                <div class="second-post">
-                    <a href="#"><img src="./images/hp-plan.jpg" alt="Post image"></a>
-                    <p class="category">Project Managment  •  12 min read</p>
-                    <h3 class="heading">Fundamentals of project management</h3>
-                    <p class="desc">Donec convallis felis ac dapibus pretium. Vivamus ut risus vitae est laoreet rhoncus. Aliquam erat.</p>
-                    <p class="author">Carol Francis   •  Jun 11, 2022</p>
-                </div>
+    <main>
+        <section class="posts">
+            <div class="container">
+                <h3 class="heading">Latest Posts</h3>
+                <p class="heading-text">Here you can read the most relevant and popular articles.</p>
 
-                <div class="third-post">
-                    <a href="#"><img src="./images/hp-plan-2.jpg" alt="Post image"></a>
-                    <p class="category">IT companies  •  11 min read</p>
-                    <h3 class="heading">Five most promising IT companies</h3>
-                    <p class="desc">Aliquam erat volutpat. Morbi sodales gravida sagittis. Cras tristique ultricies purus, sed malesuada mauris...</p>
-                    <p class="author">Sarah McKenzie  •  Oct 11, 2022</p>
-                </div>
-
-                <button>LOAD MORE POSTS</button>
-
-                <aside>
-                    <div class="aside-posts">
-                        <h3>Trending Posts</h3>
-
-                        <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
+                <div class="flex">
+                    <div class="main-posts">
+                        <div class="main-post">
+                            <h3>NEURAL NETWORKS</h3>
+                            <h2>How dangerous is the development<br>of neural networks</h2>
+                            <p>Anna Maria Lopez  •  Jun 30, 2023 • 10 min read</p>
                         </div>
-                        <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
+
+                        <div class="second-post">
+                            <div class="post-img">
+                                <a href="#"><img src="./images/pm.jpg" alt="Post image"></a>
+                            </div>
+                            
+                            <div class="post-text">
+                                <p class="category">Project Managment  •  12 min read</p>
+                                <h3 class="heading">Fundamentals of project management</h3>
+                                <p class="desc">Project management is a very important specialty in IT.</p>
+                                <p class="author">Carol Francis • Jun 21, 2023</p>
+                            </div>
                         </div>
-                        <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
+
+                        <div class="third-post">
+                            <div class="post-img">
+                                <a href="#"><img src="./images/ic.jpg" alt="Post image"></a>
+                            </div>
+                            
+                            <div class="post-text">
+                                <p class="category">IT companies  •  11 min read</p>
+                                <h3 class="heading">Five most promising IT companies</h3>
+                                <p class="desc">The fastest growing and promising companies in the IT field for 2023.</p>
+                                <p class="author">Sarah McKenzie • Jun 17, 2023</p>
+                            </div>
                         </div>
-                        <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
+
+                        <button>LOAD MORE POSTS</button>
+                    </div>
+
+                    <aside>
+                        <div class="aside-posts">
+                            <h3>Trending Posts</h3>
+
+                            <div class="aside-post">
+                                <div class="post-img">
+                                    <a href="#"><img src="./images/mt.jpg" alt="Post image"></a>
+                                </div>
+
+                                <div class="post-text">
+                                    <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
+                                    <p class="date">Dec 11, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="aside-post">
+                                <div class="post-img">
+                                    <a href="#"><img src="./images/dp.jpg" alt="Post image"></a>
+                                </div>
+
+                                <div class="post-text">
+                                    <p class="heading">What is devops</p>
+                                    <p class="date">Nov 23, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="aside-post">
+                                <div class="post-img">
+                                    <a href="#"><img src="./images/pg.jpg" alt="Post image"></a>
+                                </div>
+
+                                <div class="post-text">
+                                    <p class="heading">How to become a programmer</p>
+                                    <p class="date">Feb 11, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="aside-post">
+                                <div class="post-img">
+                                    <a href="#"><img src="./images/sp.jpg" alt="Post image"></a>
+                                </div>
+
+                                <div class="post-text">
+                                    <p class="heading">What specialty to choose in IT</p>
+                                    <p class="date">Mar 11, 2023</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="adv">
-                            <a href="#"><img src="./images/hp-plan-2.jpg" alt="Advertisement image"></a>
+                            <a href="#"><img src="./images/cs.jpg" alt="Advertisement image"></a>
                         </div>
-                    </div>
-                </aside>
-            </section>
+                    </aside>
+                </div>
+            </div>
+        </section>
 
-            <section class="subscribe">
+        <section class="subscribe">
+            <div class="container">
                 <div class="sub-content">
                     <h3>Subscribe to our Newsletter</h3>
-                    <p>Get the latest product updates, company news, and special offers delivered right to your inbox.</p>
+                    <p>Get the latest product updates, company news, and special<br>offers delivered right to your inbox.</p>
                     <form>
                         <input type="email" id="email" placeholder="Enter your email">
                         <button>SUBSCRIBE</button>
                     </form>
                 </div>
-            </section>
-        </main>
-    
-        <footer>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
             <div class="info">
-                <a href="./index.html">
-                    <img src="./images/logo.jpg" alt="Logo">
-                </a>
-                <p>Donec nec ante nisi. Vestibulum tincidunt lectus sed magna fringilla sagittis.</p>
-                <p>© 2023 IT-Blog.  All rights reserved. Terms of Service   •   Privacy Policy</p>
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+                    <a href="./index.html"><span>IT-Blog</span></a>
+                </div>
+                <p>Created by Statv Valery</p>
+                <p>© 2023 IT-Blog.  All rights reserved.<br>Terms of Service   •   Privacy Policy</p>
                 <a href="./site-plan.html">Site plan</a>
             </div>
 
             <div class="tags">
+                <span class="names">Tags</span>
                 <a href="">IT JOBS</a> 
                 <a href="">CODING</a> 
-                <a href="">PM</a> 
+                <a href="">PM</a><br>
                 <a href="">ANALYTICS</a> 
-                <a href="">BOOKS</a> 
+                <a href="">BOOKS</a><br>
                 <a href="">DESIGN</a> 
                 <a href="">GADGETS</a>
             </div>
 
             <div class="socials">
-                <a href="#"><img src="./images/twitt.png" alt="Twitter"> Twitter</a>
-                <a href="#"><img src="./images/inst.png" alt="Instagram"> Instagram</a>
-                <a href="#"><img src="./images/face.png" alt="Facebook"> Facebook</a>
+                <span class="names">Socials</span>
+                <div class="soc">
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
             </div>
 
             <div class="about-us">
-                <a href="#">Authors</a>
-                <a href="#">Sitemap</a>
-                <a href="#">About us</a>
-                <a href="#">Contact</a>
+                <span class="names">About us</span>
+                <div class="cont">
+                    <a href="#">Authors</a>
+                    <a href="./site-plan.html">Sitemap</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact</a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
