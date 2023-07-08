@@ -360,3 +360,52 @@ footer .container {
 .cont a {
     font-size: 15pt;
 }
+
+
+
+
+/* Page Content */
+.content-grid {
+    margin-top: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.table-item {
+    width: 382px;
+}
+
+.table-item p {
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.table-item ol li {
+    font-size: 14pt;
+}
+
+.aside-content {
+    margin-top: 0;
+    height: 420px;
+}
+
+.aside-posts {
+    width: 335px;
+}
+
+.footer-content {
+    margin-top: 20px;
+}

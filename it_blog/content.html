@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT-Blog</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normolize.css">
 </head>
 <body>
-    <div id="content">
-        <header>
-            <a href="./index.html">
-                <img src="./images/logo.jpg" alt="Logo">
-            </a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+                <a href="./index.html"><span>IT-Blog</span></a>
+            </div>
 
             <nav>
                 <a href="./index.html">Home</a>
@@ -20,118 +22,154 @@
                 <a href="./about-us.html">About us</a>
             </nav>
 
-            <div class="cosials">
+            <div class="socials">
                 <a href="#"><img src="./images/twitt.png" alt="Twitter"></a>
                 <a href="#"><img src="./images/inst.png" alt="Instagram"></a>
                 <a href="#"><img src="./images/face.png" alt="Facebook"></a>
             </div>
-        </header>
-    
-        <main class="content-grid">
+        </div>
+    </header>
+
+    <main class="content-grid">
+        <div class="container">
             <section class="main-content">
-                <div class="table">
+                <div class="content">
                     <h2>TABLE OF CONTENT</h2>
 
-                    <p>1. Programming languages</p>
-                    <ol>
-                        <li>Plan the User  Experience</li>
-                        <li>Communicate Ideas Clearly</li>
-                        <li>Save Time and Resources</li>
-                        <li>Collaborate with Other Team Members</li>
-                        <li>Test Different Design Systems</li>
-                    </ol>
-                    <p>2. Professions in IT</p>
-                    <ol>
-                        <li>Plan the User  Experience</li>
-                        <li>Communicate Ideas Clearly</li>
-                        <li>Save Time and Resources</li>
-                        <li>Collaborate with Other Team Members</li>
-                        <li>Test Different Design Systems</li>
-                    </ol>
-                    <p>3. Neural networks</p>
-                    <ol>
-                        <li>Plan the User  Experience</li>
-                        <li>Communicate Ideas Clearly</li>
-                        <li>Save Time and Resources</li>
-                        <li>Collaborate with Other Team Members</li>
-                        <li>Test Different Design Systems</li>
-                    </ol>
-                    <p>4. Other</p>
-                    <ol>
-                        <li>Plan the User  Experience</li>
-                        <li>Communicate Ideas Clearly</li>
-                        <li>Save Time and Resources</li>
-                        <li>Collaborate with Other Team Members</li>
-                        <li>Test Different Design Systems</li>
-                    </ol>
+                    <div class="table">
+                        <div class="table-item">
+                            <p>1. Programming languages</p>
+                            <ol>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>PHP</li>
+                            </ol>
+                        </div>
+                        <div class="table-item">
+                            <p>2. Professions in IT</p>
+                            <ol>
+                                <li>Frontend Developer</li>
+                                <li>Backend developer</li>
+                                <li>UX/UI Designer</li>
+                                <li>Project Manager</li>
+                                <li>Quality Assurance Engineer</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="table-item">
+                            <p>3. Neural networks</p>
+                            <ol>
+                                <li>Feedforward neural networks</li>
+                                <li>Recurrent Neural Networks</li>
+                                <li>Radial basis functions</li>
+                                <li>Self Organizing Maps</li>
+                                <li>Single layer/Multilayer neural network structure</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="table-item">
+                            <p>4. Other</p>
+                            <ol>
+                                <li>Plan the User  Experience</li>
+                                <li>Communicate Ideas Clearly</li>
+                                <li>Save Time and Resources</li>
+                                <li>Collaborate with Other Team Members</li>
+                                <li>Test Different Design Systems</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
 
-                <aside>
+                <aside class="aside-content">
                     <div class="aside-posts">
                         <h3>Trending Posts</h3>
 
                         <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
-                        </div>
-                        <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
-                        </div>
-                        <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
-                        </div>
-                        <div class="aside-post">
-                            <a href="#"><img src="http://placehold.it/100x100/" alt="Post image"></a>
-                            <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
-                            <p class="date">Jul 11, 2022</p>
+                            <div class="post-img">
+                                <a href="#"><img src="./images/mt.jpg" alt="Post image"></a>
+                            </div>
+
+                            <div class="post-text">
+                                <p class="heading">How to Enjoy the Journey and Reach Your Goals</p>
+                                <p class="date">Dec 11, 2023</p>
+                            </div>
                         </div>
 
-                        <div class="adv">
-                            <a href="#"><img src="./images/c-plan.jpg" alt="Advertisement image"></a>
+                        <div class="aside-post">
+                            <div class="post-img">
+                                <a href="#"><img src="./images/dp.jpg" alt="Post image"></a>
+                            </div>
+
+                            <div class="post-text">
+                                <p class="heading">What is devops</p>
+                                <p class="date">Nov 23, 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="aside-post">
+                            <div class="post-img">
+                                <a href="#"><img src="./images/sp.jpg" alt="Post image"></a>
+                            </div>
+
+                            <div class="post-text">
+                                <p class="heading">What specialty to choose in IT</p>
+                                <p class="date">Mar 11, 2023</p>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- <div class="adv">
+                        <a href="#"><img src="./images/cs.jpg" alt="Advertisement image"></a>
+                    </div> -->
                 </aside>
             </section>
-        </main>
-    
-        <footer>
+        </div>
+    </main>
+
+    <footer class="footer-content">
+        <div class="container">
             <div class="info">
-                <a href="./index.html">
-                    <img src="./images/logo.jpg" alt="Logo">
-                </a>
-                <p>Donec nec ante nisi. Vestibulum tincidunt lectus sed magna fringilla sagittis.</p>
-                <p>© 2023 IT-Blog.  All rights reserved. Terms of Service   •   Privacy Policy</p>
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+                    <a href="./index.html"><span>IT-Blog</span></a>
+                </div>
+                <p>Created by Statov Valery</p>
+                <p>© 2023 IT-Blog.  All rights reserved.<br>Terms of Service   •   Privacy Policy</p>
                 <a href="./site-plan.html">Site plan</a>
             </div>
 
             <div class="tags">
+                <span class="names">Tags</span>
                 <a href="">IT JOBS</a> 
                 <a href="">CODING</a> 
-                <a href="">PM</a> 
+                <a href="">PM</a><br>
                 <a href="">ANALYTICS</a> 
-                <a href="">BOOKS</a> 
+                <a href="">BOOKS</a><br>
                 <a href="">DESIGN</a> 
                 <a href="">GADGETS</a>
             </div>
 
             <div class="socials">
-                <a href="#"><img src="./images/twitt.png" alt="Twitter"> Twitter</a>
-                <a href="#"><img src="./images/inst.png" alt="Instagram"> Instagram</a>
-                <a href="#"><img src="./images/face.png" alt="Facebook"> Facebook</a>
+                <span class="names">Socials</span>
+                <div class="soc">
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
             </div>
 
             <div class="about-us">
-                <a href="#">Authors</a>
-                <a href="./site-plan.html">Sitemap</a>
-                <a href="#">About us</a>
-                <a href="#">Contact</a>
+                <span class="names">About us</span>
+                <div class="cont">
+                    <a href="#">Authors</a>
+                    <a href="./site-plan.html">Sitemap</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact</a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
