@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT-Blog</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normolize.css">
 </head>
 <body>
-    <div id="content">
-        <header>
-            <a href="./index.html">
-                <img src="./images/logo.jpg" alt="Logo">
-            </a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+                <a href="./index.html"><span>IT-Blog</span></a>
+            </div>
 
             <nav>
                 <a href="./index.html">Home</a>
@@ -20,95 +22,113 @@
                 <a href="./about-us.html">About us</a>
             </nav>
 
-            <div class="cosials">
+            <div class="socials">
                 <a href="#"><img src="./images/twitt.png" alt="Twitter"></a>
                 <a href="#"><img src="./images/inst.png" alt="Instagram"></a>
                 <a href="#"><img src="./images/face.png" alt="Facebook"></a>
             </div>
-        </header>
+        </div>
+    </header>
     
-        <main class="about-us-grid">
-            <section class="Authors">
+    <main class="about-us-grid">
+        <section class="authors">
+            <div class="container">
                 <h4>Authors</h4>
-                <div class="post">
-                    <a href="#"><img src="./images/a-plan.jpg" alt="Post image"></a>
-                    <p class="author">Alex Moreno</p>
-                    <p class="desc">Integer vitae faucibus erat. Maecenas ac interdum lorem, nec blandit lectus.</p>
-                    <button>Give thanks</button>
-                </div>
+                <div class="authors-cards">
+                    <div class="author-post">
+                        <a href="#"><img src="./images/my_photo.jpg" alt="Post image"></a>
+                        <p class="author">Valery statov</p>
+                        <p class="desc">Founder and ideological inspirer.</p>
+                        <button>Give thanks</button>
+                    </div>
 
-                <div class="post">
-                    <a href="#"><img src="./images/a-plan-2.jpg" alt="Post image"></a>
-                    <p class="author">Alex Moreno</p>
-                    <p class="desc">Integer vitae faucibus erat. Maecenas ac interdum lorem, nec blandit lectus.</p>
-                    <button>Give thanks</button>
-                </div>
+                    <div class="author-post">
+                        <a href="#"><img src="./images/fgp.jpg" alt="Post image"></a>
+                        <p class="author">Alexandra Moreno</p>
+                        <p class="desc">Moderator. Communication manager.</p>
+                        <button>Give thanks</button>
+                    </div>
 
-                <div class="post">
-                    <a href="#"><img src="./images/a-plan.jpg" alt="Post image"></a>
-                    <p class="author">Alex Moreno</p>
-                    <p class="desc">Integer vitae faucibus erat. Maecenas ac interdum lorem, nec blandit lectus.</p>
-                    <button>Give thanks</button>
+                    <div class="author-post">
+                        <a href="#"><img src="./images/mgp.jpg" alt="Post image"></a>
+                        <p class="author">Sam Burton</p>
+                        <p class="desc">Site administrator.</p>
+                        <button>Give thanks</button>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="message">
+        <section class="message">
+            <div class="container">
                 <h4>Send us a message</h4>
-                <form>
-                    <input type="text" id="full-name" placeholder="Full Name">
-                    <input type="email" id="email" placeholder="Enter">
-                    <input type="tel" id="phone" placeholder="Phone number (optional)">
-                    <textarea></textarea>
-                    <label>
-                        <input type="checkbox"> I'm not a robot
-                    </label>
-                    <button>Send</button>
-                </form>
+                <div class="send-uam">
+                    <form>
+                        <input type="text" id="full-name" placeholder="Full Name">
+                        <input type="email" id="email" placeholder="Enter">
+                        <input type="tel" id="phone" placeholder="Phone number (optional)">
+                        <textarea placeholder="Type your message here"></textarea>
+                        <button>Send</button>
+                    </form>
+                    <div class="adress">
+                        <div class="address-content">
+                            <p class="main-address">Editorial Office</p>
+                            <p>0231 East Parkway<br>San Francisco, CA 93021<br><br>Monday - Friday<br><br>8AM-4PM CST<br><br>1-312-123-3213</p>
+                        </div>
+                    </div>
+                    <div class="adress">
+                        <div class="address-content">
+                            <p class="main-address">Editorial Office</p>
+                            <p>0231 East Parkway<br>San Francisco, CA 93021<br><br>Monday - Friday<br><br>8AM-4PM CST<br><br>1-312-123-3213</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                <div class="adress">
-                    <p>Editorial Office</p>
-                    <p>0231 East Parkway<br>San Francisco, CA 93021<br><br>Monday - Friday<br>8AM-4PM CST<br>1-312-123-3213</p>
-                </div>
-                <div class="adress">
-                    <p>Editorial Office</p>
-                    <p>0231 East Parkway<br>San Francisco, CA 93021<br><br>Monday - Friday<br>8AM-4PM CST<br>1-312-123-3213</p>
-                </div>
-            </section>
-        </main>
-    
-        <footer>
+    <footer>
+        <div class="container">
             <div class="info">
-                <a href="./index.html">
-                    <img src="./images/logo.jpg" alt="Logo">
-                </a>
-                <p>Donec nec ante nisi. Vestibulum tincidunt lectus sed magna fringilla sagittis.</p>
-                <p>© 2023 IT-Blog.  All rights reserved. Terms of Service   •   Privacy Policy</p>
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+                    <a href="./index.html"><span>IT-Blog</span></a>
+                </div>
+                <p>Created by Statov Valery</p>
+                <p>© 2023 IT-Blog.  All rights reserved.<br>Terms of Service   •   Privacy Policy</p>
                 <a href="./site-plan.html">Site plan</a>
             </div>
 
             <div class="tags">
+                <span class="names">Tags</span>
                 <a href="">IT JOBS</a> 
                 <a href="">CODING</a> 
-                <a href="">PM</a> 
+                <a href="">PM</a><br>
                 <a href="">ANALYTICS</a> 
-                <a href="">BOOKS</a> 
+                <a href="">BOOKS</a><br>
                 <a href="">DESIGN</a> 
                 <a href="">GADGETS</a>
             </div>
 
             <div class="socials">
-                <a href="#"><img src="./images/twitt.png" alt="Twitter"> Twitter</a>
-                <a href="#"><img src="./images/inst.png" alt="Instagram"> Instagram</a>
-                <a href="#"><img src="./images/face.png" alt="Facebook"> Facebook</a>
+                <span class="names">Socials</span>
+                <div class="soc">
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
             </div>
 
             <div class="about-us">
-                <a href="#">Authors</a>
-                <a href="./site-plan.html">Sitemap</a>
-                <a href="#">About us</a>
-                <a href="#">Contact</a>
+                <span class="names">About us</span>
+                <div class="cont">
+                    <a href="#">Authors</a>
+                    <a href="./site-plan.html">Sitemap</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact</a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>

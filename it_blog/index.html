@@ -28,6 +28,13 @@
                 <a href="#"><img src="./images/face.png" alt="Facebook"></a>
             </div>
         </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./content.html">Content</a>
+            <a href="./about-us.html">About us</a>
+          </div>
     </header>
     
     <div class="hero">
@@ -35,7 +42,7 @@
             <h1>IT-BLOG</h1>
             <h2>10 reasons why you should<br>choose the IT field.</h2>
             <p>If you work in the field of IT, study it, or are simply interested in modern technologies,<br>then you are welcome to us. Here you will find the most relevant news,<br>the most useful flocks and much more.</p>
-            <button>READ MORE</button>
+            <button onclick="openNav()">READ MORE</button>
         </div>
     </div>
 
@@ -196,5 +203,6 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
